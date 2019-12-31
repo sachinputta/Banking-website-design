@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Welcome To FIRSTBANK </title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/nav_logo.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script type="text/javascript" src="js/cookies.js"></script>
+	<style>
+		.pagination {
+		  display: inline-block;
+		}
+		
+		.pagination a {
+		  color: black;
+		  float: left;
+		  padding: 8px 16px;
+		  text-decoration: none;
+		}
+		
+		.pagination a.active {
+		  background-color: #4CAF50;
+		  color: white;
+		}
+		
+		.pagination a:hover:not(.active) {background-color: #ddd;}
+		</style>
+</head>
+<body onload="setPrev_page();checkLogin(1);">
+	<div id="wrap">
+		<div id="top">
+			<a href="#"><img src="src/logo.png" height="100px" width="500px" style="border:0px; text-decoration:none;"></a>
+			<div id="display_user" style="float:right;">
+				<p id="welcome_user" style="margin-top:85px;margin-right:50px;"></p>
+			</div>
+		</div>
+		<div id="nav">
+			<div id="nav_bar">
+				<ul>
+					<li><a href="after.html">&nbsp;My account&nbsp;</a></li>
+					<li><a href="transaction1.html">&nbsp;Transaction&nbsp;</a>
+					
+					</li>
+					<li><a href="transfer1.html">&nbsp;Transfer Details&nbsp;</a></li>
+					<li><a href="bill1.html">&nbsp;Bill Details&nbsp;</a></li>
+				</ul>
+			</div>
+			<div id="general_info">
+				<ul>
+					<li><a href="faq.html">&nbsp;FAQ&nbsp;</a></li>
+					<li style="color:black;">|</li>
+					<li><a href="main.html">&nbsp;Logout&nbsp;</a></li>
+					
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="container">
+			<div id="show_bal" style="margin-left: 40%;">
+					Current Account Balance = $3900
+				</div>
+			
+			<div id="top" style="margin-bottom:10px;">
+					<div id="page_name" style="float:left;border-bottom:1px dotted black;">
+						<font color="#3399ff">Transfer Page</font>
+					</div>
+			<div class="w3-panel w3-card">  <div id="transfer_form" style="margin-left:30%">
+					<table id="outer_main" width=100%>
+							<tr>
+								<td>
+									
+										
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div style="margin-top:15px;float:left;">
+									Please enter the details below to transfer money :<br>
+									</div>
+								</td>
+							</tr>
+						</table>
+					<form name="transfer" onSubmit="return submit_form();" method="post">
+						<table width=55% cellpadding=8px>
+							<tr>
+								<td colspan=3>All <span class="imp">FIELDS </span>are Important.</td>
+							</tr>
+							<tr>
+								<td colspan=3 id="show_err"></td>
+							</tr>
+							<tr>
+								<td class="field_name">Receiver Account No. :</td>
+								<td>
+									<input type="field" onblur="get_sender();" name="reciever_accno" maxlength=10>
+								</td>
+							</tr>
+							<tr>
+								<!-- <td class="field_name">Receiver name :</td>
+								<td id="receiver_name"></td>
+								<td> -->
+										<tr>
+												<td class="field_name">Receiver Name :</td>
+												<td>
+													<input type="field" name="reciever_accno" maxlength=10>
+												</td>
+											</tr>
+								<!-- <table class="imp">
+									<tr>
+										<td style="vertical-align:top;">*</td>
+										<td>Receiver's name will automatically displayed.If not the account number must be wrong.</td>
+									</tr>
+								</table> -->
+								</td>
+							</tr>
+							<tr>
+								<td class="field_name">Amount :</td>
+								<td><input type="text" name="transfer_amount"></td>
+							</tr>
+							<tr>
+								<td align="center" colspan=2><input type="submit" value="Submit"></td>
+							</tr>
+						</table>
+					</form></div>
+		<!--  -->
+		<!-- -->
+		</div>
+
+	</div> 
+	<div id="footer" style="margin-top:10%;">
+		<hr>
+		CopyRight &copy; 2019 FIRSTBANK.
+	</div>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Welcome To FIRSTBANK </title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/nav_logo.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script type="text/javascript" src="js/cookies.js"></script>
+</head>
+<body onload="setPrev_page();checkLogin(1);">
+	<div id="wrap">
+		<div id="top">
+			<a href="#"><img src="src/logo.png" height="100px" width="500px" style="border:0px; text-decoration:none;"></a>
+			<div id="display_user" style="float:right;">
+				<p id="welcome_user" style="margin-top:85px;margin-right:50px;"></p>
+			</div>
+		</div>
+		<div id="nav">
+			<div id="nav_bar">
+				<ul>
+					<li><a href="after.html">&nbsp;My account&nbsp;</a></li>
+					<li><a href="transaction1.html">&nbsp;Transaction&nbsp;</a>
+						<!-- <ul id="sub_menu_services">
+							<li><a href="personal_banking.html">&nbsp;Personal Banking&nbsp;</a></li>
+							<li><a href="corporate_banking.html">&nbsp;Corporate Banking&nbsp;</a></li>
+						</ul> -->
+					</li>
+					<li><a href="transfer1.html">&nbsp;Transfer Details&nbsp;</a></li>
+					<li><a href="bill1.html">&nbsp;Bill Details&nbsp;</a></li>
+				</ul>
+			</div>
+			<div id="general_info">
+				<ul>
+					<li><a href="faq.html">&nbsp;FAQ&nbsp;</a></li>
+					<li style="color:black;">|</li>
+					<li><a href="main.html">&nbsp;Logout&nbsp;</a></li>
+					
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="container">
+			<div id="page_name" style="float:left;border-bottom:1px dotted black;">
+					<font color="#3399ff">My Account Details</font>
+				</div>
+		<div class="w3-panel w3-card" style="width:30%; margin-left: 30%;">
+
+		<table width=100% height=60% >
+			<tr>
+				<td colspan=2>
+					
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="details_box" align="center">
+						<table id="details_table" cellpadding=5px;>
+							<!-- <tr>
+								<td>Name :</td>
+								<td id="name"></td>
+								<td>Sachin Putta</td>
+								 <td><input type="text" name="name" placeholder="Enter your name"></td> 
+							</tr> -->
+							<tr id="accname">
+								<td>Account Holder Name : </td>
+								<td id="acc_name"></td>
+								<td>Sachin Putta</td>
+								<!-- <td><input type="text" name="name" placeholder="Account name"></td> -->
+							</tr>
+							<tr>
+								<td>Account No. :</td>
+								<td id="accno"></td>
+								<td>1234567890983</td>
+								<!-- <td><input type="text" name="name" placeholder="Account number"></td> -->
+							</tr>
+							<tr>
+								<td>Branch Name :</td>
+								<td id="user_id"></td>
+								<td>Chennai-tambaram</td>
+								<!-- <td><input type="text" name="name" placeholder="User id"></td> -->
+							</tr>
+							<tr>
+								<td>Ifsc code :</td>
+								<td id="user_id"></td>
+								<td>Firstbank_1344</td>
+								<!-- <td><input type="text" name="name" placeholder="User id"></td> -->
+							</tr>
+							<tr>
+								<td>Mobile No :</td>
+								<td id="bal"></td>
+								<td>7837638382</td>
+								<!-- <td><input type="text" name="name" placeholder="Balance"></td> -->
+							</tr>
+							<tr>
+								<td>Balance :</td>
+								<td id="bal"></td>
+								<td>$3900</td>
+								<!-- <td><input type="text" name="name" placeholder="Balance"></td> -->
+							</tr>
+							<!-- <tr>
+								<td colspan=2 align="center"><button onClick="show_block(1);">Change Password</button></td>
+							</tr> -->
+						</table>
+					</div>
+				</td>
+				<td>
+					<div id="pwd_box">
+						<!-- <form name="pwd_chnge" onSubmit="return change_pwd();" method="post">
+							<table id="pwd_table" cellpadding=5px;>
+								<tr>
+									<td colspan="2" id="show_err"></td>
+								</tr>
+								<tr>
+									<td>Old Password :</td>
+									<td><input type="password" name="old_pwd_form" placeholder="Old Password"></td>
+								</tr>
+								<tr>
+									<td>New Password :</td>
+									<td><input type="password" name="new_pwd" placeholder="New Password"></td>
+								</tr>
+								<tr>
+									<td>Confirm Password :</td>
+									<td><input type="password" name="confirm_pwd" placeholder="Confirm Password"></td>
+								</tr>
+								<tr>
+									<td><input type="submit" value="Submit">&nbsp;&nbsp;<input type="reset" value="Reset"></td>
+									<td><input type="button" value="Cancel" onClick="show_block();"></td>
+								</tr>
+							</table>
+						</form> -->
+					</div>
+				</td>
+			</tr>
+		</table>
+</div>		
+
+	</div> 
+	<div id="footer" style="margin-top:10%;">
+		<hr>
+		CopyRight &copy; 2019 FIRSTBANK.
+	</div>
+</body>
+</html>

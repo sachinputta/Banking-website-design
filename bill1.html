@@ -1,0 +1,158 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Welcome To FIRSTBANK </title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/nav_logo.css">
+	<script type="text/javascript" src="js/cookies.js"></script>
+	<script>
+		function check()
+		{
+			var radio_btn=document.bill_info.bill_btn.value;
+			alert(radio_btn);
+			var choice=document.getElementById(radio_btn).value;
+			switch(radio_btn)
+			{
+				case "utility_pay" : 
+					switch(choice)
+					{
+						case "reliance_e" :
+							alert(choice);
+							break;
+						case "tata_e" : 
+							
+							break;
+						default :
+							alert("Select Some Value");
+							return false;
+					}
+					break;
+					
+					
+				case "post_mobile" : 
+					switch(choice)
+					{
+						case "reliance" :
+						
+							break;
+						case "tata_docomo" : 
+							
+							break;
+						case "airtel" :
+						
+							break;
+						case "vodafone" : 
+							break;
+						default :
+							alert("Select Some Value");
+							return false;
+					}
+					break;
+					
+					
+				case "DTH" : 
+						switch(choice)
+						{
+							case "airtel_dth" : 
+								
+								break;
+						}
+					break;
+			}
+		}
+	</script>
+</head>
+<body onload="setPrev_page();checkLogin(1);">
+	<div id="wrap">
+		<div id="top">
+			<a href="#"><img src="src/logo.png" height="100px" width="500px" style="border:0px; text-decoration:none;"></a>
+			<div id="display_user" style="float:right;">
+				<p id="welcome_user" style="margin-top:85px;margin-right:50px;"></p>
+			</div>
+		</div>
+		<div id="nav">
+			<div id="nav_bar">
+				<ul>
+					<li><a href="after.html">&nbsp;My account&nbsp;</a></li>
+					<li><a href="transaction1.html">&nbsp;Transaction&nbsp;</a>
+						<!-- <ul id="sub_menu_services">
+							<li><a href="personal_banking.html">&nbsp;Personal Banking&nbsp;</a></li>
+							<li><a href="corporate_banking.html">&nbsp;Corporate Banking&nbsp;</a></li>
+						</ul> -->
+					</li>
+					<li><a href="transfer1.html">&nbsp;Transfer Details&nbsp;</a></li>
+					<li><a href="bill1.html">&nbsp;Bill Details&nbsp;</a></li>
+				</ul>
+			</div>
+			<div id="general_info">
+				<ul>
+					<li><a href="faq.html">&nbsp;FAQ&nbsp;</a></li>
+					<li style="color:black;">|</li>
+					<li><a href="main.html">&nbsp;Logout&nbsp;</a></li>
+					
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="container">
+		<div id="heading">
+			<center><span id="wel">Welcome To </span><font size="6" color="#3399ff">Bill Details</font></center>
+		</div>
+		<br>
+		<br>
+		<div id="bill_form" >
+			<form name="bill_info" onsubmit="check();">
+				<table id="btn" border="1px" cellpadding="3px" style="margin-left:40%">
+					<tr>
+						<th colspan="3">Bill Form</th>
+					</tr>
+					<tr>
+						<td id="btn"><input type="radio" id="bill" name="bill_btn" value="utility_pay"></td>
+						<td>Utility Payments</td>
+						<td>
+							<select id="utility_pay">
+								<option id="label" value="no">--Electricity--</option>
+								<option value="reliance_e">Reliance</option>
+								<option value="tata_e">Tata</option>
+							</select>
+						</td>
+					</tr>
+					<tr id="alt">
+						<td id="btn"><input type="radio" id="bill" name="bill_btn" value="post_mobile"></td>
+						<td>Postpost Mobile</td>
+						<td>
+							<select id="post_mobile">
+								<option  value="no">--Mobile Operator--</option>
+								<option id="label" value="no">--All India--</option>
+								<option value="reliance">Reliance</option>
+								<option value="tata_docomo">Tata Docomo</option>
+								<option value="airtel">Airtel</option>
+								<option value="vodafone">Vodafone</option>
+							</select>
+						</td>
+					</tr>
+					<tr id="alt">
+						<td id="btn"><input type="radio" id="bill" name="bill_btn" value="DTH"></td>
+						<td>DTH</td>
+						<td>
+							<select id="dth">
+								<option value="no" id="label">--Select Service Provider--</option>
+								<option value="airtel_dth">Airtel</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3"><center><input type="submit" value="Submit"></center></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</div>
+	<div id="footer" style="margin-top:10%;">
+		<hr>
+		CopyRight &copy; 2019 FIRSTBANK.
+	</div>
+</body>
+</html>

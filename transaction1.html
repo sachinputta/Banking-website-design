@@ -1,0 +1,147 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Welcome To FIRSTBANK </title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/nav_logo.css">
+	<script type="text/javascript" src="js/cookies.js"></script>
+	<style>
+		.pagination {
+		  display: inline-block;
+		}
+		
+		.pagination a {
+		  color: black;
+		  float: left;
+		  padding: 8px 16px;
+		  text-decoration: none;
+		}
+		
+		.pagination a.active {
+		  background-color: #4CAF50;
+		  color: white;
+		}
+		
+		.pagination a:hover:not(.active) {background-color: #ddd;}
+		</style>
+</head>
+<body onload="setPrev_page();checkLogin(1);">
+	<div id="wrap">
+		<div id="top">
+			<a href="#"><img src="src/logo.png" height="100px" width="500px" style="border:0px; text-decoration:none;"></a>
+			<div id="display_user" style="float:right;">
+				<p id="welcome_user" style="margin-top:85px;margin-right:50px;"></p>
+			</div>
+		</div>
+		<div id="nav">
+			<div id="nav_bar">
+				<ul>
+					<li><a href="after.html">&nbsp;My account&nbsp;</a></li>
+					<li><a href="transaction1.html">&nbsp;Transaction&nbsp;</a>
+						<!-- <ul id="sub_menu_services">
+							<li><a href="personal_banking.html">&nbsp;Personal Banking&nbsp;</a></li>
+							<li><a href="corporate_banking.html">&nbsp;Corporate Banking&nbsp;</a></li>
+						</ul> -->
+					</li>
+					<li><a href="transfer1.html">&nbsp;Transfer Details&nbsp;</a></li>
+					<li><a href="bill1.html">&nbsp;Bill Details&nbsp;</a></li>
+				</ul>
+			</div>
+			<div id="general_info">
+				<ul>
+					<li><a href="faq.html">&nbsp;FAQ&nbsp;</a></li>
+					<li style="color:black;">|</li>
+					<li><a href="main.html">&nbsp;Logout&nbsp;</a></li>
+					
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="container">
+		<div id="page_heading">
+			<font color="#3399ff">Transcations History</font>
+		</div>
+		<br>
+		<div id="show_history" style="text-align: center;">
+			<table id="table_data" border="1" style="border-collapse:collapse;" cellpadding=5px; width=100%>
+				<tr bgcolor="#ADADAD">
+					<th>Transaction ID</th>
+					<th>Credited</th>
+					<th>Debited</th>
+					<th>Paid To</th>
+			
+					<th>Balance</th>
+				</tr>
+				
+				 
+				  <tr>
+					<td>DHHFJD1344</td>
+					<td>-</td>
+					<td> $1000 </td>
+					<td> daniprak@sbiok </td>
+					<td>$ 3900</td>
+				  </tr>
+				  <tr>
+					<td>FHFJK244J24</td>
+					<td>$400</td>
+					<td> - </td>
+					<td> - </td>
+					<td>$ 4900</td>
+				  </tr>
+				  <tr>
+					<td>HUBFJ2E4N3</td>
+					<td>-</td>
+					<td> $500</td>
+					<td> rameshrao@ybl </td>
+					<td>$ 4500</td>
+				  </tr>
+				  <tr>
+					<td>TYHD13JN3J</td>
+					<td>-</td>
+					<td> $400 </td>
+					<td> RaviKumar@upi </td>
+					<td>$ 5000</td>
+				  </tr>
+				  <tr>
+					<td>FN123NHU21</td>
+					<td>$400</td>
+					<td> - </td>
+					<td> - </td>
+					<td>$ 5400</td>
+				  </tr>
+				  <tr>
+					<td>P1234FMN12</td>
+					<td>$200</td>
+					<td> - </td>
+					<td> - </td>
+					<td>$ 5000</td>
+				  </tr>
+				 
+				 
+				 
+			</table>
+		</div>
+		<br>
+		<br>
+
+<div class="pagination" style="margin-left: 40%;">
+	<a href="#">&laquo;</a>
+	<a class="active" href="#">1</a>
+	<a  href="#">2</a>
+	<a href="#">3</a>
+	<a href="#">4</a>
+	<a href="#">5</a>
+	<a href="#">6</a>
+	<a href="#">&raquo;</a>
+  </div>
+  
+
+	</div> 
+	<div id="footer" style="margin-top:10%;">
+		<hr>
+		CopyRight &copy; 2019 FIRSTBANK.
+	</div>
+</body>
+</html>
